@@ -35,7 +35,12 @@ public class CustomFrame extends JFrame
         int centerW=w/2;
         int centerH=h/2;
         int radius = 400;
-        int Secs =this.date.getSeconds();
+
+        int Secs = 0;
+        if(this.date != null)
+        {
+            Secs =this.date.getSeconds();
+        }
 
         if (w < radius){
             radius = w;
