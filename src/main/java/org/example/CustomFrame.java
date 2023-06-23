@@ -34,19 +34,19 @@ public class CustomFrame extends JFrame
         int h = this.getHeight();
         int centerW=w/2;
         int centerH=h/2;
-        int radius = 400;
+        int radius = w>h ? h/2 : w/2;
 
         int Secs = 0;
         if(this.date != null)
         {
             Secs =this.date.getSeconds();
         }
-
+/*
         if (w < radius){
             radius = w;
         } else if (h < radius) {
             radius = h;
-        }
+        }*/
         int originW = centerW - radius/2;
         int originH =  centerH - radius/2;
         //g.drawString(msg, 200, 50);
